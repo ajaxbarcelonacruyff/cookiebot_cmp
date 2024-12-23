@@ -53,6 +53,7 @@ Create a trigger named "Cookie Consent Marketing – blocking":
 - **Trigger Type**: Custom Event
 - **Event Name**: `.*` (check "Use regex matching")
 - **Condition**: Cookie Consent does not contain "marketing"
+
   ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/fd93ead5-6e1b-4b2c-ea40-7cea621ff554.png)
 
 ### Creating a Trigger for Blocking Analytics Tags
@@ -63,6 +64,7 @@ Create a trigger named "Cookie Consent Statistics – blocking":
 - **Trigger Type**: Custom Event
 - **Event Name**: `.*` (check "Use regex matching")
 - **Condition**: Cookie Consent does not contain "statistics"
+
   ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/d3717430-8e3e-b2f4-84fd-6c4913206ec0.png)
 
 ## Updating Marketing Tags
@@ -70,15 +72,18 @@ Create a trigger named "Cookie Consent Statistics – blocking":
 Modify the triggers for tags like Google Analytics, Google Ads, and Facebook Ads.
 
 1. For all Google Analytics tags, add the "Cookie Consent Statistics – blocking" trigger under the **Exception** section.
+
    ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/d3b41dee-fb75-16d5-999e-5cccb28fa2b5.png)
 2. Similarly, for Google Ads, Facebook Ads, and other marketing tags, add the "Cookie Consent Marketing – blocking" trigger as an exception.
 
 Finally, publish the workspace in Tag Manager.
 
 When you visit the target site, a popup will appear, and tags will not fire based on the user's selections.
+
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/26dbc51d-de35-29f0-eb4c-9891b6422bb3.png)
 
 For instance, if you deselect all checkboxes except for "Necessary" and click OK, the "CookieConsent" value for cookies will reflect as `false`:
+
 ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/bace1087-c266-e5eb-d8ef-912881aada96.png)
 
 While it’s possible to develop or outsource a custom solution for GDPR and CCPA compliance, this can be expensive. Moreover, future changes in regulations might require additional updates. Using a service like Cookiebot is a practical way to mitigate risks effectively.
