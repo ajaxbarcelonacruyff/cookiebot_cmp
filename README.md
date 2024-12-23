@@ -22,9 +22,11 @@ Next, we’ll set up the Cookie Consent popup tag, "Cookiebot CMP," in Google Ta
 
 1. In Google Tag Manager, navigate to the **Tags** menu and select **Create New**.
 2. Import the tag template and select "Cookiebot CMP."
+
    ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/5eeb2d59-be7a-59da-f54d-d3067c00e58c.png)
 3. Enter the key you obtained from Cookiebot into the "Cookiebot ID" field.
 4. Set the trigger to "All Pages" and save the tag.
+
    ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/19af62fd-3378-54dd-8e55-03a8e1dcdf8b.png)
 
 ## Creating the Cookie Consent Variable
@@ -33,8 +35,10 @@ Now, let’s create a variable.
 
 1. In Google Tag Manager, go to the **Variables** menu and select **Create New**.
 2. Import the "Cookiebot Consent State" template (be careful not to select similarly named templates).
+   
    ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/083a9b24-859c-3c3c-93d3-342bb04122a6.png)
-3. Name the variable "Cookie Consent" and save it.
+4. Name the variable "Cookie Consent" and save it.
+
    ![image.png](https://qiita-image-store.s3.ap-northeast-1.amazonaws.com/0/3939399/490c6251-bf58-6990-cb24-5f6cc8bf246f.png)
 
 ## Creating Triggers to Prevent Tag Firing
